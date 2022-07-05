@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <link rel="stylesheet" href="/css/main.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+          
+    <title>MIIO Rastreabilidade</title>
+</head>
+<body>
+    <main>    
+        <section class="container">
+            
+            <video class="video" width="320" height="150" autoplay muted>
+                <source src="/media/Logo.mp4" type="video/mp4">
+            </video>
+                       
+            <form class="senha" method="get" id="form1" autocomplete="off" spellcheck="false">
+                <p>LOGIN</p>
+                <br>                    
+                <label for="#">Usuário <br>
+                <input type="text" name="text" placeholder="Usuário" maxlength="15"></label>               
+                <br>
+                <label for="#">Senha <br>
+                <input type="password" name="password" placeholder="Digite sua senha" id="password" maxlength="15"></label>
+                <br>
+                <span onclick="myFunction()" class="material-icons">visibility</span></input>                                 
+                <a href="/conteudo/oneSection.html"><input type="button" class="btn" style="vertical-align:middle" value="Logar"></a>                                                  
+                <a class="link" href="/conteudo/cad.html">CADASTRO</a>
+            </form>
+            
+        </section>
+    </main>     
+        
+    <script>
+
+        function myFunction() {
+            var password = document.getElementById("password");
+            if (password.type === "password") {
+                password.type = "text";
+            } else {
+                password.type = "password";
+            }
+        }
+
+    </script>
+        
+</body>
+</html>
